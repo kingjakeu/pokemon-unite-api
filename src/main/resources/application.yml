@@ -1,0 +1,26 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+
+# log properties
+logging:
+  level:
+    root: info
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql:
+              BasicBinder: trace
