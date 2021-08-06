@@ -1,17 +1,16 @@
 package com.example.pokemon.unite.api.pokemon.domain.id;
 
-import lombok.AccessLevel;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import java.io.Serializable;
 
 @Getter
+@Builder
 @EqualsAndHashCode
 @Embeddable
+@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class PokemonStatId implements Serializable {
 

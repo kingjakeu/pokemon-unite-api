@@ -3,16 +3,17 @@ package com.example.pokemon.unite.api.pokemon.domain;
 import com.example.pokemon.unite.api.pokemon.constant.DamageType;
 import com.example.pokemon.unite.api.pokemon.constant.MoveStyle;
 import com.example.pokemon.unite.api.pokemon.constant.SkillSlotType;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Set;
 
+@ToString
 @Getter
+@Builder
 @Entity
 @Table(name = "POKEMON_SKILL")
+@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class PokemonSkill {
 
@@ -23,6 +24,7 @@ public class PokemonSkill {
     @Column(name = "NAME")
     private String name;
 
+    @Lob
     @Column(name = "DESC")
     private String description;
 

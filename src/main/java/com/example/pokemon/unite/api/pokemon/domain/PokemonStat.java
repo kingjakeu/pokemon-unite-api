@@ -1,15 +1,16 @@
 package com.example.pokemon.unite.api.pokemon.domain;
 
 import com.example.pokemon.unite.api.pokemon.domain.id.PokemonStatId;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 
+@ToString
 @Getter
+@Builder
 @Entity
 @Table(name = "POKEMON_STAT")
+@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class PokemonStat {
 
