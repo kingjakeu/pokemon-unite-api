@@ -9,13 +9,13 @@ import java.io.IOException;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
-class DataCrawlServiceTest {
+class ItemDataCrawlServiceTest {
 
     @Autowired
-    DataCrawlService dataCrawlService;
+    ItemDataCrawlService itemDataCrawlService;
 
     @Test
-    void getAllPokemonInfo() throws IOException {
-        dataCrawlService.getAllPokemonInfo();
+    void crawlAllItems() throws IOException {
+        itemDataCrawlService.crawlAllItems();
     }
 }

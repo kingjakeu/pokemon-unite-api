@@ -11,10 +11,10 @@ import java.io.IOException;
 @RequestMapping(value = "/crawl")
 @RequiredArgsConstructor
 public class DataCrawlController {
-    private final DataCrawlService dataCrawlService;
+    private final PokemonDataCrawlService pokemonDataCrawlService;
 
     @PostMapping(value = "/pokemon")
     public void crawlAllPokemonData() throws IOException {
-        this.dataCrawlService.getAllPokemonInfo();
+        this.pokemonDataCrawlService.getAllPokemonInfo();
     }
 }

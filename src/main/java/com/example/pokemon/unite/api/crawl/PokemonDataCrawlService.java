@@ -23,7 +23,7 @@ import java.util.List;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class DataCrawlService {
+public class PokemonDataCrawlService {
 
     private final PokemonRepository pokemonRepository;
     private final PokemonSkillRepository pokemonSkillRepository;
